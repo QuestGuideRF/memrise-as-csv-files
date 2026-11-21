@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <script src="menu.js"></script>
+    <title>Меню Course Dump</title>
+</head>
+<body data-ongoing-download="false" anotherparameter>
+    <h4 id="download-course" disabled><img src="icons/icon.png"/> Скачать текущий курс</h4>
+    <h4 id="stop-download"><img src="icons/stop.png"/> Остановить загрузку</h4>
+
+    <hr>
+
+    <h4 id="link-help">Ссылка/репозиторий GitHub</h4>
+    <h4 id="link-forum">Обратная связь / обсуждение</h4>
+    <h4 id="link-ankiweb">Шаблоны Анки</h4>
+
+    <hr>
+
+    <h3>Пакетная загрузка</h3>
+    <h4 id="batch-add" disabled>В очередь</h4>
+    <h4 id="batch-download" counter="0" disabled><img src="icons/icon.png"/> Скачать всё</h4>
+    <h4 id="batch-view" counter="0">Просмотр очереди</h4>
+    <h4 id="batch-import">Импорт списка курсов</h4>
+    <h4 id="batch-clear" class="danger" counter="0">Очистить очередь</h4>
+
+    <hr>
+
+    <h3>Настройки</h3>
+    <label for="setting-downloadMedia">
+        <h4>Скачивать медиа<input id="setting-downloadMedia" type="checkbox" class="toggle" checked/>
+    </h4></label>
+    <label for="setting-learningProgress">
+        <h4>Прогресс обучения<input id="setting-learningProgress" type="checkbox" class="toggle"/>
+    </h4></label>
+    <label for="setting-extraFields">
+    <h4>Дополнительные поля<input id="setting-extraFields" type="checkbox" class="toggle" checked/>
+    </h4></label>
+    <label for="setting-alternativeAnswers">
+        <h4>Альтернативные ответы<input id="setting-alternativeAnswers" type="checkbox" class="toggle"/>
+    </h4></label>
+    <label for="setting-levelTags">
+        <h4>Теги уровней<input id="setting-levelTags"  type="checkbox" class="toggle" checked/>
+    </h4></label>
+    <label for="setting-ankiPrompt">
+        <h4>Подсказка импорта в Anki<input id="setting-ankiPrompt" type="checkbox" class="toggle" checked/>
+    </h4></label>
+    <label for="toggleAdvanced">
+        <h4><input id="toggleAdvanced" type="checkbox" class="expander"/> Дополнительно
+    </h4></label>
+    <div id="advancedGrid">
+        <div>
+        <label for="setting-courseMeta">
+            <h4>Метаданные курса<input id="setting-courseMeta" type="checkbox" class="toggle" checked/>
+        </h4></label>
+        <label for="setting-learnableIds">
+            <h4>ID элементов<input id="setting-learnableIds" type="checkbox" class="toggle"/>
+        </h4></label>
+        <label for="setting-learnableMeta">
+            <h4>Метаданные элементов<input id="setting-learnableMeta" type="checkbox" class="toggle"/>
+        </h4></label>
+        <label for="setting-videoFiles">
+            <h4>Видеофайлы<input id="setting-videoFiles" type="checkbox" class="toggle"/>
+        </h4></label>
+        <label for="setting-skipMedia">
+            <h4>Пропустить загрузку медиа<input id="setting-skipMedia" type="checkbox" class="toggle"/>
+        </h4></label>
+        </div>
+    </div>
+    <h4 id="settings-restore" class="danger">Сбросить по умолчанию</h4>
+</body>
+</html>
